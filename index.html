@@ -73,8 +73,8 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">South Sudan Humanitarian Crisis</h1>
                 <hr>
-                <p>The world's newest nation is currently experiencing one of the worst humanitarian crises the world has ever seen.  Drought, conflict, and economic distaster have further exacerbated the crisis and forced over 1.5 million people to seek refuge.  Scroll down to learn more about the crisis in South Sudan. </p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Donate Now</a>
+                <p style="margin-bottom: 30px;">The world's newest nation is currently experiencing one of the worst humanitarian crises the world has ever seen.  Drought, conflict, and economic distaster have further exacerbated the crisis and forced over 1.5 million people to seek refuge.  Scroll down to learn more about the crisis in South Sudan. </p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll donateBtn">Donate Now</a>
             </div>
         </div>
     </header>
@@ -91,20 +91,25 @@
             </div>
         </div>
     </section>
+    <script type="text/javascript">
+      $('#invisibleMapCover').on('click', function(e){
+
+      });
+    </script>
 
     <section id="services">
-        <div class="container">
+
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">South Sudan Crisis: Visualized</h2>
                     <hr class="primary">
                 </div>
             </div>
-        </div>
-        <div class="container">
-          <iframe src="map/index.html">
-          </iframe>
-        </div>
+        </div> -->
+        <!-- <div class="container"> -->
+          <iframe id="frontMap" src="map/index.html">  </iframe>
+        <!-- </div> -->
     </section>
 
     <section class="no-padding" id="portfolio">

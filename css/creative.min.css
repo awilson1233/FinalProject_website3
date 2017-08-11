@@ -475,3 +475,24 @@ img::-moz-selection {
     color: #fff;
     background: 0 0
 }
+/*iframe {
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		width: 500px;
+		height: 500px;
+	}*/
+#services{
+  height: 675px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#frontMap{
+  height: 100%;
+  width: 100%;
+}
+#invisibleMapCover{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0);
+}
