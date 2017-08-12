@@ -498,6 +498,6 @@ img::-moz-selection {
 }
 #barChart{
   position: relative;
-  height: 350px;
+  height: 300px;
   width: 100%;
 }

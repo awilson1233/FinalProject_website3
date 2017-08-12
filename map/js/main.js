@@ -351,5 +351,14 @@ map.on('overlayremove', function (eventLayer) {
     } else { // Or switch to the Population Change legend...
         this.removeControl(livelihoodZonesLegend);
     }
-
+    if (eventLayer.name === 'Disputed Areas') {
+        this.removeControl(livelihoodZonesLegend);
+    } else { // Or switch to the Population Change legend...
+        this.removeControl(livelihoodZonesLegend);
+    }
+    if (eventLayer.name === 'Food Security Status') {
+        this.removeControl(livelihoodZonesLegend);
+    } else { // Or switch to the Population Change legend...
+        this.removeControl(livelihoodZonesLegend);
+    }
 });
