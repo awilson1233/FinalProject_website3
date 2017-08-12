@@ -496,3 +496,8 @@ img::-moz-selection {
   width: 100%;
   background-color: rgba(255, 0, 0, 0);
 }
+#barChart{
+  position: relative;
+  height: 350px;
+  width: 100%;
+}

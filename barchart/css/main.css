@@ -1,0 +1,25 @@
+.rectangle {
+	fill: #716A65;
+}
+.rectangle:hover {
+	fill: #F05F40;
+}
+.axis {
+  font: 10px sans-serif;
+}
+.text{
+	font-family: sans-serif;
+	font-size: 1.0em;
+	fill: #999;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+#drop{
+	position: absolute;
+	top: 50px;
+	left: 430px;
+}
