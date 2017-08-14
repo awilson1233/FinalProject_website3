@@ -188,7 +188,7 @@ $.ajax("data/cities.geojson", {
             var cities = L.geoJson(response, {
                   pointToLayer: function (feature, latlng) {
                       label = String(feature.properties.NAME)
-                      return new L.CircleMarker(latlng, citiesStyle).bindTooltip(label, { permanent: true }).openTooltip();
+                      return new L.CircleMarker(latlng, citiesStyle).bindTooltip(label, { permanent: true, className: "mapLabels", direction: "left" }).openTooltip();
                       }
                     }).addTo(map);
             controlLayers.addOverlay(cities, 'Major Cities');
@@ -338,26 +338,17 @@ map.on('overlayadd', function (eventLayer) {
     if (eventLayer.name === 'Food Security Status') {
         this.removeControl(livelihoodZonesLegend);
         foodSecurityLegend.addTo(this);
-    } else {
+    } else if (eventLayer.name === 'Livelihood Zones') {
         this.removeControl(foodSecurityLegend);
         livelihoodZonesLegend.addTo(this);
     }
+
 });
 
 map.on('overlayremove', function (eventLayer) {
     // Switch to the Population legend...
     if (eventLayer.name === 'Food Security Status') {
         this.removeControl(foodSecurityLegend);
-    } else { // Or switch to the Population Change legend...
-        this.removeControl(livelihoodZonesLegend);
-    }
-    if (eventLayer.name === 'Disputed Areas') {
-        this.removeControl(livelihoodZonesLegend);
-    } else { // Or switch to the Population Change legend...
-        this.removeControl(livelihoodZonesLegend);
-    }
-    if (eventLayer.name === 'Food Security Status') {
-        this.removeControl(livelihoodZonesLegend);
     } else { // Or switch to the Population Change legend...
         this.removeControl(livelihoodZonesLegend);
     }

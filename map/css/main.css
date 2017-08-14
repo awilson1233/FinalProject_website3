@@ -1,3 +1,51 @@
-#label{
-  font-size: 20px;
+.mapLabels{
+  font-size: 13px;
+  font: helvetica;
+  font-weight: 500;
+  background-color: none;
+  border-color: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 0px;
+  cursor: none;
+  direction: 'center';
+  interactive: false;
+  fill: false;
 }
+.leaflet-popup-tip-container {
+    display: none;
+}
+
+.leaflet-tooltip-left.mapLabels::before {border-left-color: transparent;}
+
+/*.tooltip-arrow{
+    display: none;
+    opacity: 0;
+}*/
+.leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+.a.tip {
+  display: none;
+  }
+/*{
+      all: revert;
+    color: black;
+    font-size:14px;
+    font-weight: 500;
+    fillColor: none;
+    fillOpacity: 0;
+    background-color: none;
+    border-color: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0px;
+    cursor: none;
+    direction: 'center';
+    interactive: false;
+    fill: false;
+}*/
