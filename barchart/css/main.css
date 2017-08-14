@@ -1,15 +1,18 @@
 .rectangle {
 	fill: #716A65;
+	width: 35px;
+
 }
 .rectangle:hover {
 	fill: #F05F40;
 }
 .axis {
-  font: 10px sans-serif;
+  font: 10px arial;
+	font-weight: 10px;
 }
 .text{
 	font-family: sans-serif;
-	font-size: 1.0em;
+	font-size: 2.0em;
 	fill: #999;
 }
 .axis path,

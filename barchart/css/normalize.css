@@ -192,6 +192,8 @@ img {
 
 svg:not(:root) {
   overflow: hidden;
+  position: right;
+
 }
 
 /* Grouping content

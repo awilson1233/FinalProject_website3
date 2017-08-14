@@ -36,6 +36,7 @@ d3.csv("data/need.csv", function(error, data){
 		.scale(y)
 	    .orient("left");
 
+
 	svg.append("g")
     	.attr("class", "x axis")
     	.attr("transform", "translate(0," + height + ")")
