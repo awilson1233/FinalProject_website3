@@ -1,6 +1,6 @@
 var margin = {top: 80, right: 180, bottom: 120, left: 180},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = 900 - margin.left - margin.right,
+    height = 520 - margin.top - margin.bottom;
 
 var svg = d3.select("body").append("svg")
 	.attr("width", width + margin.left + margin.right)

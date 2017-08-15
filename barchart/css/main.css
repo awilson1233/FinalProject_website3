@@ -8,11 +8,11 @@
 }
 .axis {
   font: 10px arial;
-	font-weight: 10px;
+	font-weight: 20px;
 }
 .text{
 	font-family: sans-serif;
-	font-size: 2.0em;
+	font-size: 10.0em;
 	fill: #999;
 }
 .axis path,
@@ -24,5 +24,5 @@
 #drop{
 	position: absolute;
 	top: 50px;
-	left: 430px;
+	left: 275px;
 }

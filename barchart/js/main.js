@@ -7,13 +7,14 @@ function setMap(){
     var width = window.innerWidth * 0.5,
       height = 460;
     //map frame dimensions
-    var width = 960,
+    var width = 850,
         height = 460;
 
     //create new svg container for the map
     var map = d3.select("body")
         .append("svg")
         .attr("class", "map")
+        .attr("float", "right")
         .attr("width", width)
         .attr("height", height);
 
