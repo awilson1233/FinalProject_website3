@@ -296,7 +296,7 @@ $.ajax("data/population.geojson", {
         }
     });
 
-$.ajax("data/humanitarianAssistance2.geojson", {
+$.ajax("data/humanitarianassistance2.geojson", {
         dataType: "json",
         success: function(response){
             //create a Leaflet GeoJSON layer and add it to the map
@@ -314,7 +314,7 @@ function onEachFeatureFoodSecurity(feature, layer) {
 		layer.bindPopup(popupContent);
 
 };
-$.ajax("data/foodSecurity.geojson", {
+$.ajax("data/foodsecurity.geojson", {
         dataType: "json",
         success: function(response){
             //create a Leaflet GeoJSON layer and add it to the map
