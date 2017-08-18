@@ -269,7 +269,19 @@ function onEachFeaturePopulation(feature, layer) {
 	var popupContent = ('<b>State: </b>' +feature.properties.ADMIN2 + '<br><b>Population: </b>' + feature.properties.Mid_2017_P)
 
 		layer.bindPopup(popupContent);
-
+    //event listeners to open popup on hover
+      layer.on({
+          mouseover: function(){
+              this.openPopup();
+          },
+          mouseout: function(){
+              this.closePopup();
+          },
+          //There was something funky with your code here. I deleted it and mimicked the above //code. It works! It doesn't bring up the big external page.
+          click: function(){
+              this.openPopup();
+          }
+      });
 };
 
 $.ajax("data/population.geojson", {
