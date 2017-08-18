@@ -15,6 +15,10 @@
 	font-size: 10.0em;
 	fill: #999;
 }
+.x{
+	font: 15px arial;
+	font-weight: 20px;
+}
 .axis path,
 .axis line {
   fill: none;

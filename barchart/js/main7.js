@@ -115,7 +115,11 @@ d3.csv("data/need.csv", function(error, data){
       })
       .text(function(d){
         return d;
-      })
+      });
+
+      svg.select(".x.axis")
+      .selectAll("text")
+      .style("font-size","10px"); //To change the font size of texts
 
 
 });
