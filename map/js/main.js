@@ -163,11 +163,34 @@ $.ajax("data/admin1.geojson", {
         }
     });
 
+function onEachFeatureAdmin2(feature, layer) {
+
+	//no property named popupContent; instead, create html string with all properties
+	var popupContent = ('<b>County: </b>' +feature.properties.ADMIN2)
+
+		layer.bindPopup(popupContent)
+    //event listeners to open popup on hover
+      layer.on({
+          mouseover: function(){
+              this.openPopup();
+          },
+          mouseout: function(){
+              this.closePopup();
+          },
+          //There was something funky with your code here. I deleted it and mimicked the above //code. It works! It doesn't bring up the big external page.
+          click: function(){
+              this.openPopup();
+          }
+      });
+  };
+
 $.ajax("data/admin2.geojson", {
         dataType: "json",
         success: function(response){
             //create a Leaflet GeoJSON layer and add it to the map
-            var admin2 = L.geoJson(response, {style: admin2Style}).addTo(map);
+            var admin2 = L.geoJson(response, {
+              onEachFeature: onEachFeatureAdmin2,
+              style: admin2Style}).addTo(map);
             controlLayers.addOverlay(admin2, 'County Boundary');
 
         }
